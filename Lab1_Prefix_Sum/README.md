@@ -10,7 +10,7 @@ Compiling:
 
 #1 Enter the directory by running
 
-cd Lab1_Prefix_Sum
+cd CSE3150/Lab1_Prefix_Sum
 
 #2 Compile with this command (a can be changed to a different name)
 
