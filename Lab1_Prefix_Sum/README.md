@@ -4,8 +4,7 @@ Steps to run:
 Clone the github with this command
 
 
-git clone https://github.com/KevinEHernandez/CSE3150/tree/main/Lab1_Prefix_Sum
-
+git clone https://github.com/KevinEHernandez/CSE3150.git
 
 Compiling:
 
