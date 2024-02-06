@@ -14,7 +14,7 @@ cd CSE3150/'Lab2 (1)'
 
 g++ main_parens.cpp fisher_yates.cpp
 
-g++ main_parens.cpp test.cpp -o test
+g++ fisher_yates.cpp test.cpp -o test
 
 #3 Run the program & test cases
 
