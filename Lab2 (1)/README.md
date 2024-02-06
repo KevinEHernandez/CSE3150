@@ -8,7 +8,7 @@ Compiling:
 
 #1 Enter the directory by running
 
-cd CSE3150/Lab2
+cd CSE3150/'Lab2 (1)'
 
 #2 Compile with these commands (a/test can be changed to a different name)
 
