@@ -8,7 +8,7 @@ Compiling:
 
 #1 Enter the directory by running
 
-cd CSE3150/Week4SLStarter
+cd CSE3150/Week4_SL_Starter
 
 #2 Compile with these commands (a/test can be changed to a different name)
 
