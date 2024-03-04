@@ -36,6 +36,14 @@ TEST_CASE("myfind") {
 
   };
 
+  SUBCASE("Struct constructor")
+  {int_vector i_vec_1(1,2,3);
+  CHECK(i_vec_1.id == 1);
+  CHECK (i_vec_1.from == 2);
+  CHECK(i_vec_1.to == 3);
+
+  }
+
   SUBCASE("Struct copy constructor") {
     int_vector i_vec_1(1,2,3);
     int_vector i_vec_2(i_vec_1);
@@ -46,11 +54,11 @@ TEST_CASE("myfind") {
 }
 
   SUBCASE("Struct output operator") {
-    int_vector i_vec_1(9, 1, 2);
+    int_vector i_vec_1(1,2,3);
     std::stringstream ss;
     ss << i_vec_1.id << " " << i_vec_1.from << " " << i_vec_1.to;
 
-    std::string expected_output = "9 1 2";
+    std::string expected_output = "1 2 3";
     std::string actual_output = ss.str();
     CHECK(expected_output == actual_output);
 }
