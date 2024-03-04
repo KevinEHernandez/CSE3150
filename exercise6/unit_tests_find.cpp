@@ -36,7 +36,7 @@ TEST_CASE("myfind") {
 
   };
 
-  SUB_CASE("Struct copy constructor") {
+  SUBCASE("Struct copy constructor") {
     int_vector i_vec_1(1,2,3);
     int_vector i_vec_2(i_vec_1);
 
@@ -45,7 +45,7 @@ TEST_CASE("myfind") {
     CHECK(i_vec_1.to == i_vec_2.to);
 }
 
-  SUB_CASE("Struct output operator") {
+  SUBCASE("Struct output operator") {
     int_vector i_vec_1(9, 1, 2);
     std::stringstream ss;
     ss << i_vec_1.id << " " << i_vec_1.from << " " << i_vec_1.to;
