@@ -1,3 +1,4 @@
+//Wrong name, supposed to be Lab Week 8
 Week 8: 2D Vectors & Cosine Distance
 
 Clone git repo https://github.com/KevinEHernandez/CSE3150.git
