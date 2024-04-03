@@ -9,16 +9,13 @@ using namespace std;
 
 struct double_vector {
     int id;
-    double x;
-    double y;
-    
-    double_vector(const double_vector & dv) : x(dv.x), y(dv.y) {
-    };
-    
-    double_vector() : x(0.0), y(0.0), id(0.0) {};
-    double_vector(double x, double y, int id) :  x(x), y(y), id(id) {};
-};
+    vector<double> values;
 
+    double_vector(const double_vector &dv) : id(dv.id), values(dv.values) {
+    };
+    double_vector() : id(0) {}
+    double_vector(const vector<double> &vals, int id) : values(vals), id(id) {}
+};
 
 struct my_distance {
     int id_1, id_2;
