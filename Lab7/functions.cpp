@@ -6,11 +6,20 @@ double square(const double & d){
 }
 
 double dot_product(const double_vector & one, const double_vector & two) {
-    return one.x* two.x + one.y* two.y;
+    double dp = 0.0;
+    int n = one.values.size();
+    for (size_t i = 0; i < n; ++i) {
+        dp += one.values[i] * two.values[i];
+    }
+    return dp;
 }
 
 double magnitude(const double_vector & my_vector) {
-    return sqrt(square(my_vector.x) + square(my_vector.y));
+    double sum = 0.0;
+    for (double value : my_vector.values) {
+        sum += square(value);
+    }
+    return sqrt(sum);
 };
 
 double cosine_distance(const double_vector & one, const double_vector & two) {
