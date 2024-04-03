@@ -34,12 +34,6 @@ int main() {
         }
     }
 
-    for (auto dist : all_pairs_distances) {
-        cout << " " << dist.id_1 << " " << dist.id_2 << " dist = " << dist.cos_distance << endl;
-    }
-
-    cout << endl;
-
     sort(all_pairs_distances.begin(), all_pairs_distances.end(), [](const my_distance & left, const my_distance & right) {
         return left.cos_distance < right.cos_distance;
     });
