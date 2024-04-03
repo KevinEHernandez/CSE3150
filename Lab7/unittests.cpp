@@ -14,29 +14,36 @@ TEST_CASE("Functions"){
 
     SUBCASE("Dot product"){
         double_vector v1, v2;
-        v1.x = 3.0;
+        /*v1.x = 3.0;
         v1.y = 7.0;
 
         v2.x = 10.0;
-        v2.y = 6.0;
+        v2.y = 6.0;*/
+
+        v1.values  = {3.0, 7.0};
+        v2.values = {10.0, 6.0};
 
         CHECK(dot_product(v1, v2) == 72.0);
     }
 
     SUBCASE("Magnitude"){
         double_vector v1;
-        v1.x = 3.0;
-        v1.y = 3.0;
+        /*v1.x = 3.0;
+        v1.y = 3.0;*/
+        v1.values = {3.0, 3.0};
         CHECK(magnitude(v1) == sqrt(18));
 
 
     }
     SUBCASE("Cosine Distance"){
         double_vector v1, v2;
-        v1.x = 3.0;
+        /*v1.x = 3.0;
         v1.y = 7.0;
         v2.x = 10.0;
-        v2.y = 6.0;
+        v2.y = 6.0;*/
+
+        v1.values  = {3.0, 7.0};
+        v2.values = {10.0, 6.0};
 
         double res = cosine_distance(v1, v2);
 
